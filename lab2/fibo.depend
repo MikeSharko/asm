@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1568258954 source:/home/pi/mike/fibo/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1568330954 source:/home/pi/mike/fibo/fibo.s
+
+1568333939 source:/home/pi/mike/greater_comon_devider/gcd.c
+	<stdio.h>
+
