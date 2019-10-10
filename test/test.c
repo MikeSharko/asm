@@ -1,5 +1,6 @@
 #include <stdio.h>
-extern int sum (int x, y);
+
+int sum (int, int);
 
  
 int main()

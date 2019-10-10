@@ -1,0 +1,1 @@
+calling sum.s function from test.c

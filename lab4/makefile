@@ -1,11 +1,11 @@
-test: test.o sum.o
-	gcc -o test test.o sum.o
+checkPrime: checkPrime.o checkPrimeNumber.o
+	gcc -o prime checkPrime.o checkPrimeNumber.o
 
-test.o: test.c
-	gcc -c test.c
+checkPrime.o: checkPrime.c
+	gcc -c checkPrime.c
 
-sum.o: sum.s
-	gcc -c sum.s
+checkPrimeNumber: checkPrimeNumber.s
+	gcc -c checkPrimeNumber.s
 
 clean:
 	rm *.o
