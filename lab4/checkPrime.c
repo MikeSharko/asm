@@ -1,5 +1,6 @@
 #include <stdio.h>
-extern int checkPrimeNumber(int n);
+
+int checkPrimeNumber(int);
 int main()
 {
  int n1, n2, i, flag;
@@ -15,17 +16,4 @@ int main()
  }
  return 0;
 }
-// user-defined function to check prime number
-//int checkPrimeNumber(int n)
-//{
-// int j, flag = 1;
-// for(j=2; j <= n/2; ++j)
-// {
-// if (n%j == 0)
-// {
-// flag =0;
-// break;
-// }
-// }
-// return flag;
-//}
+
