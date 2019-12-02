@@ -22,7 +22,7 @@ sockfd = socket(AF_INET, SOCK_STREAM, 0);
 bzero(&serveraddr, sizeof(serveraddr));
 
 serveraddr.sin_family= AF_INET;
-serveraddr.sin_addr.s_addr = inet_addr("10.106.137.89");
+serveraddr.sin_addr.s_addr = inet_addr("192.168.1.121");
 serveraddr.sin_port = htons(PORT);
 
 connect(sockfd, (struct sockaddr *) &serveraddr, sizeof(serveraddr));

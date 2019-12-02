@@ -14,7 +14,7 @@ message3: .asciz "%d\n"
 main:
 
 @ This is the client portion of the battleship code
-@ The CLIENT is PLAYER 1
+@ The Server is Player 2
 
 push {fp, lr}
 add fp, sp, #4

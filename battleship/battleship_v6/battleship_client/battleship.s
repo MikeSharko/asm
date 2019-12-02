@@ -31,7 +31,7 @@ add r0, sp, r0  @ second array starts at sp + 4*99
 str r0, [fp, #-12]
 
 @ open network TCP/IP connection
-bl startClient
+bl startClient   @returns the server ID
 
 push {r0}  @ push the serverID onto the stack
 
@@ -47,14 +47,14 @@ mov r8, r0  @ r8 contains the address to the packet
 bl reset_packet
 
 mov r0, r8 @ address of the first byte
-mov r1, #1 @ hit\miss falg
-mov r2, #3 @ row
+mov r1, #0 @ hit\miss falg
+mov r2, #4 @ row
 
 bl encode
 
 add r0, r8, #1 @ the adress of the second byte
 mov r1, #1 @ gameover flag   (isgameover returns the value)
-mov r2, #9 @ col
+mov r2, #5 @ col
 
 bl encode
 
